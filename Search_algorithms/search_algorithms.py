@@ -419,7 +419,6 @@ if __name__ == "__main__":
     print("1. Empty Board")
     print("2. Test Case 1")
     print("3. Test Case 2")
-    print("4. Custom Board")
     choice = input("\nEnter Choice: ")
 
     if choice == "1":
@@ -446,21 +445,6 @@ if __name__ == "__main__":
             " "," "," "
         ]
 
-    elif choice == "4":
-
-        board = []
-
-        print("\nEnter X, O or _")
-
-        for i in range(9):
-
-            value = input(
-                f"Position {i}: "
-            )
-            if value == "_":
-                value = " "
-
-            board.append(value)
     else:
 
         board = [
