@@ -6,85 +6,178 @@
 
 ---
 
-## Overview
+# Overview
 
-This assignment covers important concepts in Artificial Intelligence including adversarial search algorithms, recommendation systems, knowledge graphs, and Bayesian Networks. Each question demonstrates a different AI technique through a practical Python implementation.
+This assignment covers several important topics in Artificial Intelligence including adversarial search algorithms, intelligent recommendation systems, knowledge representation using Knowledge Graphs, and probabilistic reasoning using Bayesian Networks. The objective of the assignment is to understand the theoretical concepts and implement practical AI applications using Python.
 
 ---
-
 
 # Question 1: Adversarial Search Algorithms
 
-## Aim
+## Objective
 
-To implement and compare different search algorithms used in game-playing Artificial Intelligence.
+The objective of this project is to implement and compare different adversarial search algorithms used in game-playing Artificial Intelligence systems.
 
-## Description
+## Algorithms Implemented
 
-In this project, a Tic-Tac-Toe game environment was created and four adversarial search algorithms were implemented:
+### 1. Minimax Search
 
-### Minimax Search
+Minimax is a decision-making algorithm used in two-player games. It assumes that one player attempts to maximize the utility value while the opponent attempts to minimize it. The algorithm explores the game tree and selects the optimal move.
 
-Minimax is a decision-making algorithm used in two-player games. It assumes that one player tries to maximize the score while the opponent tries to minimize it.
+### 2. Alpha-Beta Pruning
 
-### Alpha-Beta Pruning
+Alpha-Beta Pruning improves the efficiency of Minimax by eliminating branches that cannot influence the final decision. This significantly reduces the number of nodes explored while producing the same optimal result.
 
-Alpha-Beta pruning improves Minimax by eliminating branches that cannot influence the final decision.
+### 3. Heuristic Alpha-Beta Search
 
-### Heuristic Alpha-Beta Search
+Heuristic Alpha-Beta Search combines pruning with heuristic evaluation functions. Instead of exploring the entire game tree, heuristic values are used to estimate the quality of intermediate states.
 
-This algorithm combines Alpha-Beta pruning with a heuristic evaluation function.
+### 4. Monte Carlo Tree Search (MCTS)
 
-### Monte Carlo Tree Search (MCTS)
+Monte Carlo Tree Search uses random simulations to evaluate game states. It is widely used in modern game-playing AI systems because it can handle large search spaces efficiently.
 
-MCTS uses repeated simulations to estimate the best move.
+## Problem Environment
+
+A Tic-Tac-Toe game environment was created to test and compare the performance of the implemented algorithms.
+
+## Features
+
+* Tic-Tac-Toe board representation
+* Move generation
+* Game state evaluation
+* Minimax implementation
+* Alpha-Beta pruning
+* Heuristic search
+* Monte Carlo simulations
 
 ---
-
 
 # Question 2: AI Based Travel Planner
 
-## Aim
+## Objective
 
-To design an intelligent travel recommendation system using a knowledge base.
+The objective of this project is to design an intelligent travel recommendation system using an existing knowledge base.
 
 ## Description
 
-The travel planner recommends tourist attractions, food options, and estimates travel costs based on user preferences, budget, and trip duration.
+The Travel Planner recommends destinations, tourist attractions, food options, and estimates travel costs based on user inputs.
+
+The user provides:
+
+* Destination
+* Budget
+* Number of days
+
+The system then generates a personalized travel plan.
+
+## Knowledge Base
+
+The planner stores information regarding:
+
+* Tourist places
+* Food recommendations
+* Travel costs
+
+for multiple cities including:
+
+* Goa
+* Hyderabad
+* Delhi
+* Bangalore
+
+## Features
+
+* Tourist place recommendation
+* Food recommendation
+* Personalized itinerary generation
+* Cost assessment
+* Budget validation
+
+## AI Concept Used
+
+Knowledge-based recommendation system.
 
 ---
-
 
 # Question 3: Knowledge Graphs and Tools for Building Knowledge Graphs
 
-## Aim
+## Objective
 
-To understand knowledge representation using Knowledge Graphs and explore tools used for building them.
+To understand the concept of Knowledge Graphs and explore the tools used to create and manage them.
 
-## Description
+## What is a Knowledge Graph?
 
-The project demonstrates how entities and relationships can be represented in a structured format using a Knowledge Graph.
+A Knowledge Graph is a structured representation of entities and their relationships. Information is stored in the form of nodes and edges, allowing AI systems to understand connections between concepts.
 
-Tools explored:
+## Example Used
 
-* Neo4j
-* Protégé
-* RDFLib
-* Apache Jena
-* GraphDB
+Entities:
+
+* Hyderabad
+* Goa
+* Delhi
+
+Relationships:
+
+* hasPlace
+* hasFood
+* locatedIn
+
+Example:
+
+Hyderabad → hasPlace → Charminar
+
+Hyderabad → hasFood → Hyderabadi Biryani
+
+Hyderabad → locatedIn → Telangana
+
+## Advantages of Knowledge Graphs
+
+* Efficient knowledge representation
+* Better information retrieval
+* Relationship discovery
+* Semantic search
+* Intelligent recommendation systems
+
+## Tools Explored
+
+### Neo4j
+
+A graph database that stores data as nodes and relationships.
+
+### Protégé
+
+An ontology editor used for semantic web applications.
+
+### RDFLib
+
+A Python library used for RDF graph creation and manipulation.
+
+### Apache Jena
+
+A Java framework used for semantic web and linked-data applications.
+
+### GraphDB
+
+An RDF database designed for storing and querying knowledge graphs.
 
 ---
 
-
 # Question 4: Bayesian Networks
 
-## Aim
+## Objective
 
 To explore modelling, problem representation, and inference using Bayesian Networks.
 
-## Description
+## What is a Bayesian Network?
 
-A Medical Diagnosis Bayesian Network was implemented.
+A Bayesian Network is a probabilistic graphical model that represents variables and their conditional dependencies using a Directed Acyclic Graph (DAG).
+
+Bayesian Networks help AI systems reason under uncertainty.
+
+## Example Implemented
+
+Medical Diagnosis Bayesian Network
 
 Network Structure:
 
@@ -92,29 +185,76 @@ Disease → Fever
 
 Disease → Cough
 
-Bayes' Theorem was used to perform inference and determine the probability of disease given observed symptoms.
+In this model:
 
-Tools explored:
+* Disease is the cause
+* Fever and Cough are symptoms
 
-* GeNIe
-* Netica
-* pgmpy
-* BayesiaLab
-* Hugin
+## Probabilities Used
+
+* P(Disease)
+* P(Fever | Disease)
+* P(Fever | No Disease)
+* P(Cough | Disease)
+* P(Cough | No Disease)
+
+## Inference
+
+Using Bayes' Theorem, the probability of disease is calculated given the evidence that a patient has fever.
+
+This demonstrates probabilistic inference and reasoning under uncertainty.
+
+## Tools Explored
+
+### GeNIe
+
+Graphical modelling and inference tool for Bayesian Networks.
+
+### Netica
+
+Software package for probabilistic reasoning and decision support.
+
+### pgmpy
+
+Python library for probabilistic graphical models.
+
+### BayesiaLab
+
+Professional Bayesian Network modelling platform.
+
+### Hugin
+
+Commercial Bayesian Network and decision support software.
 
 ---
 
 # Technologies Used
 
 * Python 3
-* Search Algorithms
+* Artificial Intelligence Algorithms
 * Knowledge Representation
+* Search Techniques
 * Knowledge Graphs
 * Bayesian Networks
 * Probabilistic Reasoning
 
 ---
 
+# Learning Outcomes
+
+Through this assignment, the following concepts were studied and implemented:
+
+* Adversarial Search
+* Game Playing AI
+* Recommendation Systems
+* Knowledge Representation
+* Knowledge Graph Construction
+* Bayesian Modelling
+* Probabilistic Inference
+* Decision Making Under Uncertainty
+
+---
+
 # Conclusion
 
-This assignment demonstrates key Artificial Intelligence concepts including adversarial search, recommendation systems, knowledge representation, and probabilistic reasoning. The projects provide practical implementations of techniques widely used in modern AI applications.
+This assignment demonstrates practical applications of Artificial Intelligence techniques across different domains. Search algorithms were applied to game-playing environments, recommendation systems were used for travel planning, knowledge graphs were used for structured knowledge representation, and Bayesian Networks were used for reasoning under uncertainty. Together, these projects provide a strong foundation in core AI concepts and their real-world applications.
