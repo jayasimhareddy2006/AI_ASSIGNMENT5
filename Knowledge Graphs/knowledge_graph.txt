@@ -1,0 +1,121 @@
+KNOWLEDGE GRAPHS AND TOOLS FOR BUILDING KNOWLEDGE GRAPHS
+
+==================================================
+INTRODUCTION
+==================================================
+
+A Knowledge Graph is a structured representation of entities and the relationships between them. It stores information in the form of nodes (entities) and edges (relationships). Knowledge Graphs help Artificial Intelligence systems organize, retrieve, and reason about knowledge efficiently.
+
+Knowledge Graphs are widely used in search engines, recommendation systems, virtual assistants, semantic web applications, and intelligent information retrieval systems.
+
+==================================================
+EXAMPLE KNOWLEDGE GRAPH
+==================================================
+
+Entity: Hyderabad
+
+Relationships:
+
+Hyderabad -> hasPlace -> Charminar
+Hyderabad -> hasPlace -> Golconda Fort
+Hyderabad -> hasFood -> Hyderabadi Biryani
+Hyderabad -> locatedIn -> Telangana
+
+Entity: Goa
+
+Goa -> hasPlace -> Baga Beach
+Goa -> hasPlace -> Fort Aguada
+Goa -> hasFood -> Fish Curry
+Goa -> locatedIn -> Goa
+
+==================================================
+ADVANTAGES OF KNOWLEDGE GRAPHS
+==================================================
+
+1. Efficient representation of knowledge.
+2. Easy discovery of relationships between entities.
+3. Supports reasoning and inference.
+4. Improves recommendation systems.
+5. Enables semantic search and intelligent querying.
+6. Helps AI systems understand context.
+
+==================================================
+TOOLS USED FOR BUILDING KNOWLEDGE GRAPHS
+==================================================
+
+1. Neo4j
+
+Neo4j is one of the most popular graph databases. It stores data as nodes and relationships and uses the Cypher query language for graph queries.
+
+Features:
+- Graph database
+- Visual graph representation
+- Fast relationship traversal
+
+--------------------------------------------------
+
+2. Protégé
+
+Protégé is an ontology editor developed by Stanford University. It is widely used for creating ontologies and semantic web applications.
+
+Features:
+- Ontology creation
+- OWL support
+- Semantic web development
+
+--------------------------------------------------
+
+3. RDFLib
+
+RDFLib is a Python library used for creating and manipulating RDF graphs.
+
+Features:
+- RDF support
+- Semantic web applications
+- Easy integration with Python
+
+--------------------------------------------------
+
+4. Apache Jena
+
+Apache Jena is a Java framework for semantic web and linked data applications.
+
+Features:
+- RDF processing
+- SPARQL query support
+- Ontology management
+
+--------------------------------------------------
+
+5. GraphDB
+
+GraphDB is an RDF graph database used for storing and querying large-scale knowledge graphs.
+
+Features:
+- RDF storage
+- Semantic reasoning
+- Enterprise-level graph management
+
+==================================================
+PROJECT DESCRIPTION
+==================================================
+
+In this project, a simple Knowledge Graph was implemented using Python dictionaries.
+
+Entities Used:
+- Hyderabad
+- Goa
+- Delhi
+
+Relationships Used:
+- hasPlace
+- hasFood
+- locatedIn
+
+The project demonstrates how entities and relationships can be represented in a structured form and used for knowledge representation.
+
+==================================================
+CONCLUSION
+==================================================
+
+Knowledge Graphs provide an efficient way to represent and organize information. They help AI systems understand relationships between entities and support intelligent decision-making. Tools such as Neo4j, Protégé, RDFLib, Apache Jena, and GraphDB are widely used for developing Knowledge Graph applications.
