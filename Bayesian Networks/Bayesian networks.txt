@@ -1,0 +1,184 @@
+BAYESIAN NETWORKS: MODELLING, PROBLEM REPRESENTATION AND INFERENCE
+
+==================================================
+INTRODUCTION
+==================================================
+
+A Bayesian Network is a probabilistic graphical model that represents random variables and their conditional dependencies using a Directed Acyclic Graph (DAG).
+
+Bayesian Networks are used to represent uncertain knowledge and perform probabilistic reasoning. They help Artificial Intelligence systems make decisions based on incomplete or uncertain information.
+
+Applications include:
+- Medical diagnosis
+- Weather prediction
+- Risk analysis
+- Fault detection
+- Decision support systems
+- Machine learning
+
+==================================================
+COMPONENTS OF A BAYESIAN NETWORK
+==================================================
+
+1. Nodes
+   Nodes represent random variables.
+
+2. Edges
+   Edges represent dependencies between variables.
+
+3. Conditional Probability Tables (CPT)
+   CPTs define probability relationships among variables.
+
+==================================================
+EXAMPLE USED IN THIS PROJECT
+==================================================
+
+Medical Diagnosis Bayesian Network
+
+Disease ---> Fever
+Disease ---> Cough
+
+In this network:
+
+Disease is the cause.
+
+Fever and Cough are symptoms that depend on the presence of the disease.
+
+Prior Probability:
+
+P(Disease) = 0.10
+
+Conditional Probabilities:
+
+P(Fever | Disease) = 0.80
+P(Fever | No Disease) = 0.20
+
+P(Cough | Disease) = 0.70
+P(Cough | No Disease) = 0.30
+
+Evidence:
+
+Patient has Fever.
+
+Inference:
+
+The probability of disease is calculated given the evidence of fever using Bayes' Theorem.
+
+P(Disease | Fever)
+
+This process is called probabilistic inference.
+
+==================================================
+TOOLS USED FOR BAYESIAN NETWORKS
+==================================================
+
+1. GeNIe
+
+GeNIe is a graphical tool used for creating Bayesian Networks and decision models.
+
+Features:
+- Visual network creation
+- Probabilistic inference
+- Decision analysis
+
+--------------------------------------------------
+
+2. Netica
+
+Netica is a software package used for Bayesian Network modelling and reasoning.
+
+Features:
+- Easy network construction
+- Probability calculations
+- Visual representation
+
+--------------------------------------------------
+
+3. pgmpy
+
+pgmpy is a Python library for probabilistic graphical models.
+
+Features:
+- Bayesian Networks
+- Markov Models
+- Inference algorithms
+- Learning from data
+
+--------------------------------------------------
+
+4. BayesiaLab
+
+BayesiaLab is a professional Bayesian Network modelling tool.
+
+Features:
+- Data analysis
+- Machine learning
+- Decision support
+
+--------------------------------------------------
+
+5. Hugin
+
+Hugin is a commercial software package for Bayesian Networks.
+
+Features:
+- Knowledge modelling
+- Risk assessment
+- Decision support systems
+
+==================================================
+MODELLING
+==================================================
+
+The Bayesian Network model used in this project is:
+
+Disease ---> Fever
+Disease ---> Cough
+
+The disease node influences the symptom nodes. The relationships are represented using conditional probabilities.
+
+==================================================
+PROBLEM REPRESENTATION
+==================================================
+
+Problem:
+
+Given that a patient has fever, determine the probability that the patient has a disease.
+
+Variables:
+
+Disease
+Fever
+Cough
+
+Evidence:
+
+Fever = True
+
+Target:
+
+P(Disease | Fever)
+
+==================================================
+INFERENCE
+==================================================
+
+Inference is the process of calculating unknown probabilities using available evidence.
+
+In this project, Bayes' Theorem is used to compute:
+
+P(Disease | Fever)
+
+The result obtained is:
+
+P(Disease | Fever) = 0.3077
+
+Conclusion:
+
+Since the probability is less than 0.5, the disease is considered unlikely.
+
+==================================================
+CONCLUSION
+==================================================
+
+Bayesian Networks provide an effective framework for representing uncertain knowledge and performing probabilistic reasoning. They are widely used in Artificial Intelligence applications where decisions must be made under uncertainty. The medical diagnosis example demonstrates modelling, problem representation, and inference using a Bayesian Network.
